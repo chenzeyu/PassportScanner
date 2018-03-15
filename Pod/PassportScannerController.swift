@@ -22,7 +22,7 @@ open class PassportScannerController: UIViewController, G8TesseractDelegate {
     public var accuracy: Float = 1
 
     /// When you create your own view, then make sure you have a GPUImageView that is linked to this
-    @IBOutlet var renderView: RenderView!
+    var renderView: RenderView!
 
     /// For capturing the video and passing it on to the filters.
     var camera: Camera!
